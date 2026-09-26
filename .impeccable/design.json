@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-26T06:22:03.256Z",
+  "title": "Design System: Your Office Partners Business Card",
+  "extensions": {
+    "colorMeta": {
+      "plum": {
+        "role": "primary",
+        "displayName": "Account Plum",
+        "canonical": "#65063c",
+        "oklch": "oklch(33.6% 0.132 353.5)",
+        "tonalRamp": [
+          "oklch(15% 0.132 353.5)",
+          "oklch(25% 0.132 353.5)",
+          "oklch(35% 0.132 353.5)",
+          "oklch(45% 0.132 353.5)",
+          "oklch(55% 0.132 353.5)",
+          "oklch(68% 0.132 353.5)",
+          "oklch(82% 0.132 353.5)",
+          "oklch(95% 0.03 353.5)"
+        ]
+      },
+      "plum-hover": {
+        "role": "primary",
+        "displayName": "Lit Plum",
+        "canonical": "#7a0b4a",
+        "oklch": "oklch(38.5% 0.15 353.4)",
+        "tonalRamp": [
+          "oklch(15% 0.14 353.4)",
+          "oklch(25% 0.14 353.4)",
+          "oklch(35% 0.14 353.4)",
+          "oklch(45% 0.14 353.4)",
+          "oklch(55% 0.14 353.4)",
+          "oklch(68% 0.14 353.4)",
+          "oklch(82% 0.14 353.4)",
+          "oklch(95% 0.03 353.4)"
+        ]
+      },
+      "plum-deep": {
+        "role": "primary",
+        "displayName": "Pressed Plum",
+        "canonical": "#3d0424",
+        "oklch": "oklch(24.2% 0.092 352.1)",
+        "tonalRamp": [
+          "oklch(15% 0.092 352.1)",
+          "oklch(25% 0.092 352.1)",
+          "oklch(35% 0.092 352.1)",
+          "oklch(45% 0.092 352.1)",
+          "oklch(55% 0.092 352.1)",
+          "oklch(68% 0.092 352.1)",
+          "oklch(82% 0.092 352.1)",
+          "oklch(95% 0.03 352.1)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Aubergine Ink",
+        "canonical": "#140810",
+        "oklch": "oklch(15.7% 0.026 340.2)",
+        "tonalRamp": [
+          "oklch(15% 0.026 340.2)",
+          "oklch(25% 0.026 340.2)",
+          "oklch(35% 0.026 340.2)",
+          "oklch(45% 0.026 340.2)",
+          "oklch(55% 0.026 340.2)",
+          "oklch(68% 0.026 340.2)",
+          "oklch(82% 0.026 340.2)",
+          "oklch(95% 0.026 340.2)"
+        ]
+      },
+      "slab": {
+        "role": "neutral",
+        "displayName": "Slab",
+        "canonical": "#21111b",
+        "oklch": "oklch(20.4% 0.032 342.2)",
+        "tonalRamp": [
+          "oklch(15% 0.032 342.2)",
+          "oklch(25% 0.032 342.2)",
+          "oklch(35% 0.032 342.2)",
+          "oklch(45% 0.032 342.2)",
+          "oklch(55% 0.032 342.2)",
+          "oklch(68% 0.032 342.2)",
+          "oklch(82% 0.032 342.2)",
+          "oklch(95% 0.03 342.2)"
+        ]
+      },
+      "slab-hover": {
+        "role": "neutral",
+        "displayName": "Slab Hover",
+        "canonical": "#2c1824",
+        "oklch": "oklch(24.1% 0.038 343.5)",
+        "tonalRamp": [
+          "oklch(15% 0.038 343.5)",
+          "oklch(25% 0.038 343.5)",
+          "oklch(35% 0.038 343.5)",
+          "oklch(45% 0.038 343.5)",
+          "oklch(55% 0.038 343.5)",
+          "oklch(68% 0.038 343.5)",
+          "oklch(82% 0.038 343.5)",
+          "oklch(95% 0.03 343.5)"
+        ]
+      },
+      "tile": {
+        "role": "neutral",
+        "displayName": "Tile Well",
+        "canonical": "#120710",
+        "oklch": "oklch(15% 0.027 333.5)",
+        "tonalRamp": [
+          "oklch(15% 0.027 333.5)",
+          "oklch(25% 0.027 333.5)",
+          "oklch(35% 0.027 333.5)",
+          "oklch(45% 0.027 333.5)",
+          "oklch(55% 0.027 333.5)",
+          "oklch(68% 0.027 333.5)",
+          "oklch(82% 0.027 333.5)",
+          "oklch(95% 0.027 333.5)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "#f6f0f3",
+        "oklch": "oklch(96.1% 0.008 345.3)",
+        "tonalRamp": [
+          "oklch(15% 0.008 345.3)",
+          "oklch(25% 0.008 345.3)",
+          "oklch(35% 0.008 345.3)",
+          "oklch(45% 0.008 345.3)",
+          "oklch(55% 0.008 345.3)",
+          "oklch(68% 0.008 345.3)",
+          "oklch(82% 0.008 345.3)",
+          "oklch(95% 0.008 345.3)"
+        ]
+      },
+      "bone-soft": {
+        "role": "neutral",
+        "displayName": "Bone Soft",
+        "canonical": "#c3b3bd",
+        "oklch": "oklch(78.3% 0.023 339.7)",
+        "tonalRamp": [
+          "oklch(15% 0.023 339.7)",
+          "oklch(25% 0.023 339.7)",
+          "oklch(35% 0.023 339.7)",
+          "oklch(45% 0.023 339.7)",
+          "oklch(55% 0.023 339.7)",
+          "oklch(68% 0.023 339.7)",
+          "oklch(82% 0.023 339.7)",
+          "oklch(95% 0.023 339.7)"
+        ]
+      },
+      "bone-faint": {
+        "role": "neutral",
+        "displayName": "Bone Faint",
+        "canonical": "#8c7885",
+        "oklch": "oklch(59.5% 0.031 339)",
+        "tonalRamp": [
+          "oklch(15% 0.031 339)",
+          "oklch(25% 0.031 339)",
+          "oklch(35% 0.031 339)",
+          "oklch(45% 0.031 339)",
+          "oklch(55% 0.031 339)",
+          "oklch(68% 0.031 339)",
+          "oklch(82% 0.031 339)",
+          "oklch(95% 0.03 339)"
+        ]
+      },
+      "focus-rose": {
+        "role": "neutral",
+        "displayName": "Focus Rose",
+        "canonical": "#f0c9dd",
+        "oklch": "oklch(87.5% 0.051 345.9)",
+        "tonalRamp": [
+          "oklch(15% 0.051 345.9)",
+          "oklch(25% 0.051 345.9)",
+          "oklch(35% 0.051 345.9)",
+          "oklch(45% 0.051 345.9)",
+          "oklch(55% 0.051 345.9)",
+          "oklch(68% 0.051 345.9)",
+          "oklch(82% 0.051 345.9)",
+          "oklch(95% 0.03 345.9)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f3f1f3",
+        "oklch": "oklch(96% 0.003 325.6)",
+        "tonalRamp": [
+          "oklch(15% 0.003 325.6)",
+          "oklch(25% 0.003 325.6)",
+          "oklch(35% 0.003 325.6)",
+          "oklch(45% 0.003 325.6)",
+          "oklch(55% 0.003 325.6)",
+          "oklch(68% 0.003 325.6)",
+          "oklch(82% 0.003 325.6)",
+          "oklch(95% 0.003 325.6)"
+        ]
+      },
+      "paper-white": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(25% 0 89.9)",
+          "oklch(35% 0 89.9)",
+          "oklch(45% 0 89.9)",
+          "oklch(55% 0 89.9)",
+          "oklch(68% 0 89.9)",
+          "oklch(82% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper Ink",
+        "canonical": "#2b1622",
+        "oklch": "oklch(23.4% 0.039 345.3)",
+        "tonalRamp": [
+          "oklch(15% 0.039 345.3)",
+          "oklch(25% 0.039 345.3)",
+          "oklch(35% 0.039 345.3)",
+          "oklch(45% 0.039 345.3)",
+          "oklch(55% 0.039 345.3)",
+          "oklch(68% 0.039 345.3)",
+          "oklch(82% 0.039 345.3)",
+          "oklch(95% 0.03 345.3)"
+        ]
+      },
+      "paper-soft": {
+        "role": "neutral",
+        "displayName": "Paper Soft",
+        "canonical": "#5e4b57",
+        "oklch": "oklch(43.7% 0.032 340.3)",
+        "tonalRamp": [
+          "oklch(15% 0.032 340.3)",
+          "oklch(25% 0.032 340.3)",
+          "oklch(35% 0.032 340.3)",
+          "oklch(45% 0.032 340.3)",
+          "oklch(55% 0.032 340.3)",
+          "oklch(68% 0.032 340.3)",
+          "oklch(82% 0.032 340.3)",
+          "oklch(95% 0.03 340.3)"
+        ]
+      },
+      "paper-edge": {
+        "role": "neutral",
+        "displayName": "Paper Edge",
+        "canonical": "#e1dbe0",
+        "oklch": "oklch(89.8% 0.009 331)",
+        "tonalRamp": [
+          "oklch(15% 0.009 331)",
+          "oklch(25% 0.009 331)",
+          "oklch(35% 0.009 331)",
+          "oklch(45% 0.009 331)",
+          "oklch(55% 0.009 331)",
+          "oklch(68% 0.009 331)",
+          "oklch(82% 0.009 331)",
+          "oklch(95% 0.009 331)"
+        ]
+      },
+      "tick-minor": {
+        "role": "neutral",
+        "displayName": "Tick Grey",
+        "canonical": "#b7a2b0",
+        "oklch": "oklch(73.5% 0.031 338.1)",
+        "tonalRamp": [
+          "oklch(15% 0.031 338.1)",
+          "oklch(25% 0.031 338.1)",
+          "oklch(35% 0.031 338.1)",
+          "oklch(45% 0.031 338.1)",
+          "oklch(55% 0.031 338.1)",
+          "oklch(68% 0.031 338.1)",
+          "oklch(82% 0.031 338.1)",
+          "oklch(95% 0.03 338.1)"
+        ]
+      },
+      "whatsapp": {
+        "role": "channel",
+        "displayName": "WhatsApp Green",
+        "canonical": "#12813f",
+        "oklch": "oklch(53% 0.137 150.8)",
+        "tonalRamp": [
+          "oklch(15% 0.137 150.8)",
+          "oklch(25% 0.137 150.8)",
+          "oklch(35% 0.137 150.8)",
+          "oklch(45% 0.137 150.8)",
+          "oklch(55% 0.137 150.8)",
+          "oklch(68% 0.137 150.8)",
+          "oklch(82% 0.137 150.8)",
+          "oklch(95% 0.03 150.8)"
+        ]
+      },
+      "linkedin": {
+        "role": "channel",
+        "displayName": "LinkedIn Blue",
+        "canonical": "#0a66c2",
+        "oklch": "oklch(51.6% 0.163 254.7)",
+        "tonalRamp": [
+          "oklch(15% 0.14 254.7)",
+          "oklch(25% 0.14 254.7)",
+          "oklch(35% 0.14 254.7)",
+          "oklch(45% 0.14 254.7)",
+          "oklch(55% 0.14 254.7)",
+          "oklch(68% 0.14 254.7)",
+          "oklch(82% 0.14 254.7)",
+          "oklch(95% 0.03 254.7)"
+        ]
+      }
+    },
+    "colorAlphas": [
+      {
+        "name": "slab-edge",
+        "value": "rgba(255, 236, 246, 0.06)",
+        "purpose": "Inset hairline on contact rows (token --slab-edge)."
+      },
+      {
+        "name": "ghost-edge",
+        "value": "rgba(255, 236, 246, 0.12)",
+        "purpose": "Ghost pill hairline and list-label rule; 0.22 on hover."
+      },
+      {
+        "name": "plum-glow",
+        "value": "rgba(101, 6, 60, 0.28)",
+        "purpose": "Single radial glow at the top of the dark screen: radial-gradient(120% 60% at 50% 0%, ..., transparent 70%)."
+      },
+      {
+        "name": "active-tile",
+        "value": "rgba(0, 0, 0, 0.2)",
+        "purpose": "Icon tile during the channel sweep."
+      },
+      {
+        "name": "active-text",
+        "value": "rgba(255, 255, 255, 0.88)",
+        "purpose": "Row detail and arrow during the channel sweep."
+      }
+    ],
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The person's name only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Company headline on paper, in pressed plum."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Role line under the name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Company description, 34ch to 40ch."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Contact row details, tabular numerals, ellipsis."
+      },
+      "label-action": {
+        "displayName": "Label Action",
+        "purpose": "Pill labels; row labels at 700."
+      },
+      "label-caps": {
+        "displayName": "Label Caps",
+        "purpose": "Company lockup beside the mark."
+      },
+      "label-list": {
+        "displayName": "Label List",
+        "purpose": "Contact list label with trailing hairline."
+      }
+    },
+    "shadows": [
+      {
+        "name": "bone-glow",
+        "value": "0 10px 28px -10px rgba(246, 240, 243, 0.35)",
+        "purpose": "Primary pill on ink."
+      },
+      {
+        "name": "bone-glow-hover",
+        "value": "0 16px 34px -12px rgba(246, 240, 243, 0.45)",
+        "purpose": "Primary pill hover."
+      },
+      {
+        "name": "slab-edge",
+        "value": "inset 0 0 0 1px rgba(255, 236, 246, 0.06)",
+        "purpose": "Contact rows."
+      },
+      {
+        "name": "ghost-edge",
+        "value": "inset 0 0 0 1px rgba(255, 236, 246, 0.12)",
+        "purpose": "Ghost pill; 0.22 on hover."
+      },
+      {
+        "name": "plum-lift",
+        "value": "0 12px 26px -12px rgba(101, 6, 60, 0.6)",
+        "purpose": "Brand pill on paper."
+      },
+      {
+        "name": "plum-lift-hover",
+        "value": "0 18px 30px -14px rgba(101, 6, 60, 0.7)",
+        "purpose": "Brand pill hover."
+      },
+      {
+        "name": "paper-lift",
+        "value": "inset 0 0 0 1px #e1dbe0, 0 6px 18px -12px rgba(43, 22, 34, 0.3)",
+        "purpose": "Secondary pill on paper."
+      },
+      {
+        "name": "paper-lift-hover",
+        "value": "inset 0 0 0 1px #d2c7cf, 0 12px 24px -14px rgba(43, 22, 34, 0.35)",
+        "purpose": "Secondary pill hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing curve (token --ease-out)."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) over 0.12s",
+        "purpose": "Pill active state."
+      },
+      {
+        "name": "lift",
+        "value": "translateY(-2px) over 0.5s",
+        "purpose": "Filled pill hover."
+      },
+      {
+        "name": "channel-sweep",
+        "value": "scaleX(0 to 1) from left over 0.55s",
+        "purpose": "Channel colour fill on row hover, focus, press."
+      },
+      {
+        "name": "check-draw",
+        "value": "stroke-dashoffset 1 to 0 over 0.6s, 0.05s delay",
+        "purpose": "Saved-state check mark."
+      },
+      {
+        "name": "rise",
+        "value": "translateY(10px) + blur(4px) to rest over 0.9s, 60ms stagger from 80ms",
+        "purpose": "Dark screen entrance, once."
+      },
+      {
+        "name": "resolve",
+        "value": "translateY(20px) + blur(3px), view() timeline entry 10% to cover 30%",
+        "purpose": "Paper screen on scroll where supported."
+      },
+      {
+        "name": "tick-wave",
+        "value": "scroll-driven smoothstep crest, 0.25s linear per tick",
+        "purpose": "Ruler ticks lift as the page scrolls."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 400px"
+      },
+      {
+        "name": "wide",
+        "value": "min-width: 720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill",
+      "kind": "button",
+      "refersTo": "pill-primary",
+      "description": "Save contact. The single bone-filled action on the dark screen.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-pill ds-pill-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"9\" cy=\"8\" r=\"4\"/><path d=\"M2 21a7 7 0 0 1 14 0\"/><path d=\"M19 8v6M16 11h6\"/></svg><span>Save contact</span></a></div>",
+      "css": ".ds-stage { background: var(--ink); padding: 24px; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border: 0; border-radius: 999px; font-family: var(--font); font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: transform 0.5s var(--ease-out), background-color 0.3s var(--ease-out), box-shadow 0.5s var(--ease-out), color 0.3s var(--ease-out); } .ds-pill:active { transform: scale(0.97); transition-duration: 0.12s; } .ds-pill:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; } .ds-pill svg { width: 20px; height: 20px; } .ds-pill-primary { background: var(--bone); color: var(--ink); box-shadow: 0 10px 28px -10px rgba(246, 240, 243, 0.35); } .ds-pill-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 34px -12px rgba(246, 240, 243, 0.45); }"
+    },
+    {
+      "name": "Primary Pill (saved)",
+      "kind": "button",
+      "refersTo": "pill-primary-saved",
+      "description": "After tap: white fill, plum label, the logo check mark draws in.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-pill ds-pill-saved\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path class=\"ds-check\" pathLength=\"1\" d=\"M5 12.5l4.5 4.5L19 7.5\"/></svg><span>Contact ready</span></a></div>",
+      "css": ".ds-stage { background: var(--ink); padding: 24px; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border: 0; border-radius: 999px; font-family: var(--font); font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: transform 0.5s var(--ease-out), background-color 0.3s var(--ease-out), box-shadow 0.5s var(--ease-out), color 0.3s var(--ease-out); } .ds-pill:active { transform: scale(0.97); transition-duration: 0.12s; } .ds-pill:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; } .ds-pill svg { width: 20px; height: 20px; } .ds-pill-saved { background: #fff; color: var(--plum); box-shadow: 0 10px 28px -10px rgba(246, 240, 243, 0.35); } .ds-check { stroke-dasharray: 1; stroke-dashoffset: 1; animation: ds-draw 0.6s var(--ease-out) 0.05s forwards; } @keyframes ds-draw { to { stroke-dashoffset: 0; } }"
+    },
+    {
+      "name": "Ghost Pill",
+      "kind": "button",
+      "refersTo": "pill-ghost",
+      "description": "Secondary action on ink (Call).",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-pill ds-pill-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z\"/></svg><span>Call</span></a></div>",
+      "css": ".ds-stage { background: var(--ink); padding: 24px; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border: 0; border-radius: 999px; font-family: var(--font); font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: transform 0.5s var(--ease-out), background-color 0.3s var(--ease-out), box-shadow 0.5s var(--ease-out), color 0.3s var(--ease-out); } .ds-pill:active { transform: scale(0.97); transition-duration: 0.12s; } .ds-pill:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; } .ds-pill svg { width: 20px; height: 20px; } .ds-pill-ghost { background: var(--slab); color: var(--bone); box-shadow: inset 0 0 0 1px rgba(255, 236, 246, 0.12); } .ds-pill-ghost:hover { background: #2c1824; box-shadow: inset 0 0 0 1px rgba(255, 236, 246, 0.22); }"
+    },
+    {
+      "name": "Brand Pill",
+      "kind": "button",
+      "refersTo": "pill-brand",
+      "description": "Primary action on paper (website).",
+      "html": "<div class=\"ds-paper\"><a class=\"ds-pill ds-pill-brand\" href=\"#\"><span>yourofficepartners.com</span><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a></div>",
+      "css": ".ds-paper { background: var(--paper); padding: 24px; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border: 0; border-radius: 999px; font-family: var(--font); font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: transform 0.5s var(--ease-out), background-color 0.3s var(--ease-out), box-shadow 0.5s var(--ease-out), color 0.3s var(--ease-out); } .ds-pill:active { transform: scale(0.97); transition-duration: 0.12s; } .ds-pill:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; } .ds-pill svg { width: 20px; height: 20px; } .ds-pill-brand { min-height: 54px; background: var(--plum); color: #fff; box-shadow: 0 12px 26px -12px rgba(101, 6, 60, 0.6); } .ds-pill-brand:hover { background: #7a0b4a; transform: translateY(-2px); box-shadow: 0 18px 30px -14px rgba(101, 6, 60, 0.7); } .ds-pill-brand:focus-visible { outline-color: var(--plum); }"
+    },
+    {
+      "name": "Paper Pill",
+      "kind": "button",
+      "refersTo": "pill-paper",
+      "description": "Secondary action on paper (location).",
+      "html": "<div class=\"ds-paper\"><a class=\"ds-pill ds-pill-paper\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg><span>Location</span></a></div>",
+      "css": ".ds-paper { background: var(--paper); padding: 24px; } .ds-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 22px; border: 0; border-radius: 999px; font-family: var(--font); font-weight: 650; font-size: 1rem; letter-spacing: -0.01em; white-space: nowrap; text-decoration: none; cursor: pointer; transition: transform 0.5s var(--ease-out), background-color 0.3s var(--ease-out), box-shadow 0.5s var(--ease-out), color 0.3s var(--ease-out); } .ds-pill:active { transform: scale(0.97); transition-duration: 0.12s; } .ds-pill:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; } .ds-pill svg { width: 20px; height: 20px; } .ds-pill-paper { min-height: 54px; background: #fff; color: var(--paper-ink); box-shadow: inset 0 0 0 1px var(--paper-edge), 0 6px 18px -12px rgba(43, 22, 34, 0.3); } .ds-pill-paper:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1px #d2c7cf, 0 12px 24px -14px rgba(43, 22, 34, 0.35); } .ds-pill-paper:focus-visible { outline-color: var(--plum); }"
+    },
+    {
+      "name": "Contact Row",
+      "kind": "custom",
+      "refersTo": "channel-row",
+      "description": "Signature slab: icon tile, label, detail, arrow; the channel colour sweeps in from the left on hover, focus, press.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-channel\" href=\"#\" style=\"--fill: var(--plum)\"><span class=\"ds-channel-icon\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3-8-5.3z\"/></svg></span><span class=\"ds-channel-text\"><span class=\"ds-channel-label\">Email</span><span class=\"ds-channel-detail\">saleem@yourofficepartners.com</span></span><span class=\"ds-channel-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></span></a></div>",
+      "css": ".ds-stage { background: var(--ink); padding: 24px; } .ds-channel { position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: center; gap: 16px; min-height: 76px; padding: 12px 18px 12px 12px; border-radius: var(--radius-slab); background: var(--slab); box-shadow: inset 0 0 0 1px var(--slab-edge); color: var(--bone); text-decoration: none; font-family: var(--font); } .ds-channel::before { content: ''; position: absolute; inset: 0; z-index: -1; background: var(--fill); transform: scaleX(0); transform-origin: left center; transition: transform 0.55s var(--ease-out); } .ds-channel-icon { flex: none; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--tile); transition: background-color 0.4s var(--ease-out); } .ds-channel-icon svg { width: 22px; height: 22px; } .ds-channel-text { display: grid; min-width: 0; flex: 1; } .ds-channel-label { font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; } .ds-channel-detail { font-size: 0.9375rem; color: var(--bone-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-variant-numeric: tabular-nums; transition: color 0.4s var(--ease-out); } .ds-channel-go { flex: none; display: inline-flex; color: var(--bone-faint); transition: transform 0.45s var(--ease-out), color 0.3s var(--ease-out); } .ds-channel:hover::before, .ds-channel:focus-visible::before, .ds-channel:active::before { transform: scaleX(1); } .ds-channel:hover .ds-channel-icon, .ds-channel:focus-visible .ds-channel-icon { background: rgba(0, 0, 0, 0.2); } .ds-channel:hover .ds-channel-detail, .ds-channel:hover .ds-channel-go, .ds-channel:focus-visible .ds-channel-detail, .ds-channel:focus-visible .ds-channel-go { color: rgba(255, 255, 255, 0.88); } .ds-channel:hover .ds-channel-go { transform: translate(2px, -2px); } .ds-channel:focus-visible { outline: 2px solid #f0c9dd; outline-offset: 3px; }"
+    },
+    {
+      "name": "List Label",
+      "kind": "custom",
+      "refersTo": "label-list",
+      "description": "Names the contact list; expanded tracked caps with a hairline to the column edge. Not a heading kicker.",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-list-label\"><span>Contact</span></div></div>",
+      "css": ".ds-stage { background: var(--ink); padding: 24px; } .ds-list-label { display: flex; align-items: center; gap: 14px; font-family: var(--font); font-size: 0.6875rem; font-weight: 700; font-stretch: 110%; letter-spacing: 0.2em; text-transform: uppercase; color: var(--bone-faint); } .ds-list-label::after { content: ''; flex: 1; height: 1px; background: rgba(255, 236, 246, 0.12); }"
+    },
+    {
+      "name": "Ledger Ruler",
+      "kind": "custom",
+      "refersTo": "tick-minor",
+      "description": "The seam between screens: 1px ticks every 12px, every fifth plum; a wave lifts them with scroll.",
+      "html": "<div class=\"ds-ruler\"><span class=\"ds-tick ds-tick-major\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick ds-tick-major\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.10\"></span><span class=\"ds-tick ds-tick-major\" style=\"--lift:0.25\"></span><span class=\"ds-tick\" style=\"--lift:0.40\"></span><span class=\"ds-tick\" style=\"--lift:0.55\"></span><span class=\"ds-tick\" style=\"--lift:0.70\"></span><span class=\"ds-tick\" style=\"--lift:0.85\"></span><span class=\"ds-tick ds-tick-major\" style=\"--lift:1.00\"></span><span class=\"ds-tick\" style=\"--lift:0.85\"></span><span class=\"ds-tick\" style=\"--lift:0.70\"></span><span class=\"ds-tick\" style=\"--lift:0.55\"></span><span class=\"ds-tick\" style=\"--lift:0.40\"></span><span class=\"ds-tick ds-tick-major\" style=\"--lift:0.25\"></span><span class=\"ds-tick\" style=\"--lift:0.10\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick ds-tick-major\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span><span class=\"ds-tick\" style=\"--lift:0.00\"></span></div>",
+      "css": ".ds-ruler { display: flex; justify-content: space-between; height: 44px; padding: 0 2px; overflow: hidden; background: var(--paper); } .ds-tick { --lift: 0; flex: none; width: 1px; height: 100%; background: #b7a2b0; transform-origin: top; transform: scaleY(calc(0.3 + var(--lift) * 0.55)); } .ds-tick-major { background: var(--plum); opacity: 0.55; transform: scaleY(calc(0.55 + var(--lift) * 0.45)); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ledger Card",
+    "overview": "The phone becomes a dark business card in the company's own plum. One narrow centered column, bone-white type on a near-black aubergine ground, a single bone-filled pill that means \"save me\", and three contact slabs that flood with their channel's colour when touched. A ruler of ledger ticks is the seam into a second, lighter world: cool off-white paper where plum takes over as the action colour and the logo appears in full.\n\nThe system is deliberately small and dense in the way a physical card is dense: nothing decorative, every element tappable or identifying. Depth is soft and tonal on the dark screen, soft and lifted on the paper screen. Motion is quiet on arrival (a blur-rise, once) and expressive only in response to the visitor: the fill sweep, the check-mark draw, the tick wave that travels with scroll.\n\nThe world is a translation of a user-supplied reference card into Your Office Partners material, so its grammar (dark top, centered name, pills, colour-sweep rows, ruler divider, light company screen) is binding, and its colour and mark are YOP's.",
+    "keyCharacteristics": [
+      "Two grounds only: aubergine ink above the ruler, cool paper below it.",
+      "One typeface (Archivo variable) doing everything through weight and width, from 800 condensed display to 700 expanded tracked caps.",
+      "Pills for actions, 18px slabs for contact rows, square-ish icon tiles inside the slabs.",
+      "Brand plum is the owner colour; channel colours appear only as interaction fills.",
+      "The ruler is the only divider between the screens."
+    ],
+    "rules": [
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Ink above the ruler, paper below it. No third ground, no gradients beyond the single plum glow at the top of the dark screen.",
+        "section": "colors"
+      },
+      {
+        "name": "The Borrowed Colour Rule",
+        "body": "Third-party channel colours exist only as momentary fills behind their own row. At rest every row is plum-family slab.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Hierarchy comes from Archivo's weight and width axes. Do not introduce a second typeface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Top, Tracked Bottom Rule",
+        "body": "Large type is negatively tracked and condensed; small caps are positively tracked and expanded. Never track display type open.",
+        "section": "typography"
+      },
+      {
+        "name": "The Soft Light Rule",
+        "body": "Shadows are diffuse, offset downward only, with negative spread. No hard offset shadows, no borders heavier than a 1px inset hairline.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep exactly one bone-filled primary pill on the dark screen and one plum pill on paper.",
+      "Do build hierarchy from Archivo's weight and width axes (800 at 94% width for display, 700 at 108 to 110% width for tracked caps).",
+      "Do use the three radii only: 999px pills, 18px slabs, 14px tiles.",
+      "Do let channel colours appear only as the sweep fill behind their own row, from the left, on hover, focus and press.",
+      "Do keep the top of the ruler visible at the fold as the scroll cue.",
+      "Do gate hover effects behind `(hover: hover)` and honour reduced motion by removing animation, not just shortening it."
+    ],
+    "donts": [
+      "Don't add a third ground colour or a section between the dark card and the paper page; the ruler is the only seam.",
+      "Don't introduce a second typeface or track display type open.",
+      "Don't use hard offset shadows or borders heavier than a 1px inset hairline.",
+      "Don't place small tracked caps above headlines as kickers; tracked caps are reserved for the company lockup and the contact list label.",
+      "Don't show channel brand colours at rest."
+    ]
+  }
+}

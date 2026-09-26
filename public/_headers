@@ -1,0 +1,4 @@
+# Netlify / Cloudflare Pages: iOS only opens its contact sheet for a vCard MIME type.
+/*.vcf
+  Content-Type: text/vcard; charset=utf-8
+  Content-Disposition: inline
