@@ -14,13 +14,25 @@ npm run dev
 
 Build for production with `npm run build`. The output goes to `dist/`.
 
+## Employees and URLs
+
+One site, one domain, one page per employee:
+
+| URL | Employee | Contact file |
+|---|---|---|
+| `/` and `/saleem` | Mohamed Saleem, Founder & CEO | `/mohamed-saleem.vcf` |
+| `/habeeb` | Habeeb Mohamed, HR Executive | `/habeeb.vcf` |
+| `/farhan` | Mohamed Farhan, Tax & Accounting Executive | `/farhan.vcf` |
+
+Addresses are forgiving: `/Habeeb/` opens Habeeb's card, and any unknown address shows the default card (Saleem).
+
 ## Change the details
 
-Everything shown on the card lives in **`src/config.js`**: name, role, phone, WhatsApp, email, LinkedIn, and the company text and links. The contact file (`mohamed-saleem.vcf`) is generated from the same file, so the card and the saved contact always match.
+Everything shown on the cards lives in **`src/config.js`**: the `employees` list plus the shared company text and links. The build creates each employee's page (`/<slug>/index.html`, with their name in the tab title and link previews) and their contact file from the same data, so the card and the saved contact always match.
 
-Restart `npm run dev` after editing `config.js` so the contact file picks up the change.
+To add an employee, copy one block in `employees`, change the values and give it a new `slug` (lowercase, no spaces). Leave `linkedin` empty to hide that row. Rebuild and redeploy.
 
-For another employee, copy the project (or the `employee` object), change the values, and set a new `vcardFileName`.
+Restart `npm run dev` after editing `config.js` so the contact files pick up the change.
 
 Brand images are in `public/brand/`:
 
