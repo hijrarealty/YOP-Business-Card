@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { employee, company, vcardFileName } from '../config.js'
+import { company, fullName as nameOf, vcardFileName } from '../config.js'
 import {
   PhoneIcon,
   MailIcon,
@@ -25,8 +25,8 @@ const SAVE_HINTS = {
   desktop: 'Contact card downloaded. Open it to add to your contacts.',
 }
 
-export default function ProfileSection() {
-  const fullName = `${employee.firstName} ${employee.lastName}`
+export default function ProfileSection({ employee }) {
+  const fullName = nameOf(employee)
   const [platform, setPlatform] = useState(null)
   const [saved, setSaved] = useState(false)
   const timer = useRef()
@@ -63,15 +63,15 @@ export default function ProfileSection() {
       href: `mailto:${employee.email}`,
       icon: MailIcon,
     },
-    {
+    employee.linkedin && {
       id: 'linkedin',
       label: 'LinkedIn',
-      detail: `/in/${employee.linkedin.split('/in/')[1].replace(/\/$/, '')}`,
+      detail: `/in/${employee.linkedin.split('/in/')[1]?.replace(/\/$/, '') ?? ''}`,
       href: employee.linkedin,
       icon: LinkedInIcon,
       external: true,
     },
-  ]
+  ].filter(Boolean)
 
   return (
     <section className="profile" aria-labelledby="person-name">
@@ -92,7 +92,7 @@ export default function ProfileSection() {
         <div className="actions rise" style={{ '--i': 3 }}>
           <a
             className={`pill pill--primary${saved ? ' is-saved' : ''}`}
-            href={`/${vcardFileName}`}
+            href={`/${vcardFileName(employee)}`}
             download={downloadName}
             type="text/vcard"
             onClick={onSave}
@@ -112,7 +112,7 @@ export default function ProfileSection() {
           {saved && platform ? SAVE_HINTS[platform] : ''}
         </p>
 
-        <nav className="channels" aria-label={`Contact ${employee.firstName}`}>
+        <nav className="channels" aria-label={`Contact ${fullName}`}>
           <div className="channels__label rise" style={{ '--i': 4 }}>
             <span>Contact</span>
           </div>
