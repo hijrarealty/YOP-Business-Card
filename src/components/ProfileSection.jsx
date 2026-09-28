@@ -51,7 +51,8 @@ export default function ProfileSection({ employee }) {
     {
       id: 'whatsapp',
       label: 'WhatsApp',
-      // The number stays out of sight; the link and the saved contact carry it.
+      // Rows name the action, not the raw number, address or URL;
+      // the links and the saved contact carry those.
       detail: 'Send a message',
       href: `https://wa.me/${employee.whatsapp}`,
       icon: WhatsAppIcon,
@@ -60,14 +61,14 @@ export default function ProfileSection({ employee }) {
     {
       id: 'email',
       label: 'Email',
-      detail: employee.email,
+      detail: 'Send an email',
       href: `mailto:${employee.email}`,
       icon: MailIcon,
     },
     employee.linkedin && {
       id: 'linkedin',
       label: 'LinkedIn',
-      detail: `/in/${employee.linkedin.split('/in/')[1]?.replace(/\/$/, '') ?? ''}`,
+      detail: 'View profile',
       href: employee.linkedin,
       icon: LinkedInIcon,
       external: true,

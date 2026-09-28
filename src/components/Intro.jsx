@@ -4,9 +4,9 @@ import { useLayoutEffect, useRef, useState } from 'react'
 // motion from the brand's logo file), holds for a beat, then the paper wipes
 // up to uncover the card. Tap, click or any key skips it.
 
-const DURATION = 3.0 // logo motion, seconds
+const DURATION = 2.5 // logo motion, seconds
 const HOLD = 0 // ms the finished logo stays before leaving
-const LEAVE = 550 // ms for the wipe; keep in sync with .intro transition in CSS
+const LEAVE = 150 // ms for the wipe; keep in sync with .intro transition in CSS
 
 const APEX = [755, 13]
 const ARM = 297
