@@ -51,7 +51,8 @@ export default function ProfileSection({ employee }) {
     {
       id: 'whatsapp',
       label: 'WhatsApp',
-      detail: employee.phoneDisplay,
+      // The number stays out of sight; the link and the saved contact carry it.
+      detail: 'Send a message',
       href: `https://wa.me/${employee.whatsapp}`,
       icon: WhatsAppIcon,
       external: true,
@@ -77,14 +78,14 @@ export default function ProfileSection({ employee }) {
     <section className="profile" aria-labelledby="person-name">
       <div className="profile__inner">
         <header className="identity">
-          <h1 id="person-name" className="identity__name rise" style={{ '--i': 0 }}>
-            {fullName}
+          <h1 id="person-name" className="identity__name">
+            <span className="identity__name-line">{fullName}</span>
           </h1>
           <p className="identity__role rise" style={{ '--i': 1 }}>
             {employee.role}
           </p>
           <p className="identity__company rise" style={{ '--i': 2 }}>
-            <YopMark className="identity__mark" />
+            <YopMark className="identity__mark" animated />
             <span>{company.name}</span>
           </p>
         </header>

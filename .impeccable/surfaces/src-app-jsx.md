@@ -7,7 +7,7 @@ related_targets: ["index.html"]
 
 # Surface: employee business card (index.html / src/App.jsx)
 
-Mode: Persuade (the visitor acts: save contact, call, message). Audience: someone who just met the employee, on a phone, seconds after a handshake. Action: Save Contact first, then Call/WhatsApp/Email/LinkedIn, then company website/location. Constraints: exactly two screens, no intro splash, data in src/config.js.
+Mode: Persuade (the visitor acts: save contact, call, message). Audience: someone who just met the employee, on a phone, seconds after a handshake. Action: Save Contact first, then Call/WhatsApp/Email/LinkedIn, then company website/location. Constraints: exactly two screens after a skippable logo intro (added 2026-09-28 at the user's request), data in src/config.js.
 
 Direction note: the user pinned the reference video (HILF Shipping card) as the visual and interaction world, so no concept roll was run; a user-pinned direction beats the roll. Translated into YOP brand material.
 
