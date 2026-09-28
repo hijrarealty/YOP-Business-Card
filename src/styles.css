@@ -519,18 +519,186 @@ a:focus-visible {
   color: var(--paper-soft);
 }
 
+/* ---------- Intro: the logo folds itself together ---------- */
+
+html.is-locked,
+html.is-locked body {
+  overflow: hidden;
+}
+
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: max(24px, env(safe-area-inset-top)) var(--gutter) max(24px, env(safe-area-inset-bottom));
+  background: var(--paper);
+  color-scheme: light;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  /* The paper lifts off like a sheet, uncovering the card underneath. */
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 0.55s cubic-bezier(0.45, 0, 0.15, 1);
+}
+
+.intro.is-leaving {
+  clip-path: inset(0 0 100% 0);
+  pointer-events: none;
+}
+
+/* The ledger edge of the lifting sheet. */
+.intro::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(101, 6, 60, 0.5) 0 1px,
+    transparent 1px 12px
+  );
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.intro.is-leaving::after {
+  opacity: 1;
+}
+
+.intro__logo {
+  width: min(78vw, 380px);
+  line-height: 0;
+  transition:
+    transform 0.55s cubic-bezier(0.45, 0, 0.15, 1),
+    opacity 0.35s linear;
+}
+
+.intro.is-leaving .intro__logo {
+  transform: translateY(-18vh) scale(0.92);
+  opacity: 0;
+}
+
+.yop-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible; /* the spring overshoots a few px outside the box */
+}
+
+.yop-logo:not(.is-drawn) :is(.yop-g, .yop-tick, .yop-bracket) {
+  opacity: 0;
+}
+
 /* ---------- Motion ---------- */
+
+/* The card waits, frozen on its first frame, until the intro lifts. */
+.is-waiting :is(.rise, .identity__name-line, .mark-bracket, .mark-check),
+.is-waiting .pill--primary::after {
+  animation-play-state: paused;
+}
 
 /* Screen 1 settles in once, top to bottom. */
 .rise {
-  animation: rise 0.9s var(--ease-out) both;
-  animation-delay: calc(var(--i, 0) * 60ms + 80ms);
+  animation: rise 0.7s var(--ease-out) both;
+  animation-delay: calc(var(--i, 0) * 50ms + 80ms);
 }
 
 @keyframes rise {
   from {
-    transform: translateY(10px);
-    filter: blur(4px);
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+}
+
+/* The name is uncovered from below, the same motion as the sheet lifting. */
+.identity__name {
+  /* Room for descenders inside the mask. */
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.identity__name-line {
+  display: block;
+  animation: name-in 0.8s var(--ease-out) both;
+}
+
+@keyframes name-in {
+  from {
+    clip-path: inset(0 0 100% 0);
+    transform: translateY(0.45em);
+  }
+  to {
+    clip-path: inset(0 0 -0.2em 0);
+    transform: none;
+  }
+}
+
+/* The small mark in the lockup replays the logo's fold: the bracket
+   opens, then the check drops in and lands. */
+.mark-bracket,
+.mark-check {
+  transform-box: fill-box;
+}
+
+.mark-bracket {
+  transform-origin: 50% 0;
+  animation: mark-bracket 0.6s var(--ease-out) 0.25s both;
+}
+
+.mark-check {
+  transform-origin: 50% 100%;
+  animation: mark-check 0.6s var(--ease-out) 0.5s both;
+}
+
+@keyframes mark-bracket {
+  from {
+    opacity: 0;
+    transform: scaleX(0.1);
+  }
+}
+
+@keyframes mark-check {
+  from {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+}
+
+/* One pass of light across Save contact, pointing at the one thing to do. */
+.pill--primary {
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.pill--primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    100deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.95) 48%,
+    rgba(240, 201, 221, 0.9) 52%,
+    transparent 70%
+  );
+  transform: translateX(-110%);
+  animation: sheen 1s cubic-bezier(0.45, 0, 0.2, 1) 0.8s both;
+  pointer-events: none;
+}
+
+.pill--primary > span {
+  position: relative;
+}
+
+@keyframes sheen {
+  to {
+    transform: translateX(110%);
   }
 }
 
@@ -539,14 +707,17 @@ a:focus-visible {
   .company__inner > * {
     animation: resolve linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    /* Finishes as soon as each element is fully on screen, so the last items
+       (buttons near the page bottom) never get stuck part-way. No blur here:
+       a half-finished blur leaves buttons looking out of focus. */
+    animation-range: entry 0% entry 100%;
   }
 }
 
 @keyframes resolve {
   from {
+    opacity: 0.2;
     transform: translateY(20px);
-    filter: blur(3px);
   }
 }
 
@@ -559,6 +730,17 @@ a:focus-visible {
   }
   .check-path {
     stroke-dashoffset: 0;
+  }
+  /* Keep the hand-off legible: the sheet fades instead of sliding. */
+  .intro {
+    transition: opacity 0.4s linear !important;
+  }
+  .intro.is-leaving {
+    clip-path: none;
+    opacity: 0;
+  }
+  .pill--primary::after {
+    display: none;
   }
 }
 

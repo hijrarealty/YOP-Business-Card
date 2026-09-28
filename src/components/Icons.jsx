@@ -83,13 +83,16 @@ export const LinkedInIcon = (p) => (
 
 // The Your Office Partners mark: diamond bracket and check,
 // traced from the official logo file.
-export const YopMark = ({ tone = 'light', ...p }) => (
+// `animated` tags the two parts so CSS can replay the logo's fold in miniature.
+export const YopMark = ({ tone = 'light', animated = false, ...p }) => (
   <svg viewBox="0 0 395 394" aria-hidden="true" focusable="false" {...p}>
     <polygon
+      className={animated ? 'mark-bracket' : undefined}
       fill={tone === 'light' ? 'currentColor' : '#65063C'}
       points="4,193 37,226 46,213 28,194 199,23 370,193 344,222 354,233 393,194 200,0"
     />
     <polygon
+      className={animated ? 'mark-check' : undefined}
       fill={tone === 'light' ? 'currentColor' : '#9A999A'}
       points="324,262 313,252 200,365 154,321 150,320 141,332 199,389"
     />

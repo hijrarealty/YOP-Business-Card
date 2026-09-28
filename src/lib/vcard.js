@@ -19,8 +19,7 @@ export function buildVCard(employee, company) {
     `TEL;TYPE=CELL,VOICE,pref:${employee.phone}`,
     `EMAIL;TYPE=INTERNET,WORK:${employee.email}`,
     `URL;TYPE=WORK:${company.website}`,
-    `item1.URL:${employee.linkedin}`,
-    'item1.X-ABLabel:LinkedIn',
+    ...(employee.linkedin ? [`item1.URL:${employee.linkedin}`, 'item1.X-ABLabel:LinkedIn'] : []),
     'END:VCARD',
   ]
   // vCard requires CRLF line endings.
