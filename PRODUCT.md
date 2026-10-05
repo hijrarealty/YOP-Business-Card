@@ -28,7 +28,7 @@ Opened mostly on mobile browsers (iOS Safari, Android Chrome, in-app browsers of
 - Screen 1: name (main heading), role, phone/WhatsApp, email, LinkedIn, Call, Save Contact.
 - Save Contact serves a vCard (.vcf) so the OS contact flow opens.
 - Screen 2: company logo, short description, website button, location (maps) button.
-- Intro: the animated YOP logo (the brand's "Fold" motion, ~3s) plays on paper, then the sheet lifts to reveal the card. Tap or any key skips it. (Added 2026-09-28 at the user's request, reversing the earlier "no splash" decision.)
+- Intro: the animated YOP logo (the brand's supplied CSS logo motion, ~3.7s including a short hold) plays on paper, then the sheet lifts to reveal the card. Tap or any key skips it. (Added 2026-09-28 at the user's request, reversing the earlier "no splash" decision.)
 - The WhatsApp row does not show the phone number; it reads "Send a message".
 - All employee/company data lives in one config file so more employees can be added later.
 

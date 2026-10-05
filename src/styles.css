@@ -519,7 +519,7 @@ a:focus-visible {
   color: var(--paper-soft);
 }
 
-/* ---------- Intro: the logo folds itself together ---------- */
+/* ---------- Intro: the logo motion plays on paper ---------- */
 
 html.is-locked,
 html.is-locked body {
@@ -538,6 +538,7 @@ html.is-locked body {
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
+  overflow: hidden;
   /* The paper lifts off like a sheet, uncovering the card underneath. */
   clip-path: inset(0 0 0 0);
   transition: clip-path 0.3s cubic-bezier(0.45, 0, 0.15, 1);
@@ -569,27 +570,22 @@ html.is-locked body {
   opacity: 1;
 }
 
+/* The motion is drawn on a 16:9 canvas with the logo in its middle ~57%, so the
+   canvas is wider than a phone and the dashes slide in from off-screen. */
 .intro__logo {
-  width: min(78vw, 380px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(150vw, 1200px, 260vh);
   line-height: 0;
+  transform: translate(-50%, -50%);
   transition:
     transform 0.3s cubic-bezier(0.45, 0, 0.15, 1),
     opacity 0.2s linear;
 }
 
 .intro.is-leaving .intro__logo {
-  transform: translateY(-18vh) scale(0.92);
-  opacity: 0;
-}
-
-.yop-logo {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: visible; /* the spring overshoots a few px outside the box */
-}
-
-.yop-logo:not(.is-drawn) :is(.yop-g, .yop-tick, .yop-bracket) {
+  transform: translate(-50%, calc(-50% - 18vh)) scale(0.92);
   opacity: 0;
 }
 
@@ -722,7 +718,8 @@ html.is-locked body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
+  /* The logo motion is excluded: it lands every keyframe at once instead. */
+  *:not(.yop-root, .yop-root *),
   *::before,
   *::after {
     animation: none !important;
@@ -741,6 +738,10 @@ html.is-locked body {
   }
   .pill--primary::after {
     display: none;
+  }
+  .yop-root * {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
   }
 }
 

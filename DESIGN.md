@@ -201,7 +201,7 @@ A monochrome plum family, warmed to aubergine on the dark screen and cooled to a
 - **Label List** (700, 0.6875rem, 0.2em, uppercase, width 110%): The label naming the contact list, followed by a hairline that runs to the column edge.
 
 ### Named Rules
-**The One Family Rule.** Hierarchy comes from Archivo's weight and width axes. Do not introduce a second typeface.
+**The One Family Rule.** Hierarchy comes from Archivo's weight and width axes. Do not introduce a second typeface. (The one exception is Raleway, which exists only inside the logo motion because it is part of the brand's logo artwork.)
 
 **The Tight Top, Tracked Bottom Rule.** Large type is negatively tracked and condensed; small caps are positively tracked and expanded. Never track display type open.
 
@@ -254,7 +254,7 @@ The white diamond-check mark (30px) beside the company name in label caps, cente
 The seam between screens: a 44px paper band of 1px ticks every 12px, minor ticks tick grey, every fifth plum at 55%. As the page scrolls, a smooth wave crest travels across the ticks, lifting them. Decorative (`aria-hidden`) and static under reduced motion.
 
 ### Motion
-Easing is one curve, `cubic-bezier(0.16, 1, 0.3, 1)`. Every visit opens on a paper intro where the logo folds together (the brand's 3s "Fold" motion). The moment the motion ends, the paper lifts off upward (clip-path, 0.3s, no hold and no skip label) with a ledger-tick edge, uncovering the card. While the intro is up, the card's entrance waits paused on its first frame. The name is then uncovered from below, the lockup mark replays the fold in miniature, and one sheen passes across Save contact. The rest of the dark screen rises in (14px plus 6px blur, 0.9s, 70ms stagger); the paper screen resolves on scroll via view timelines where supported. Reduced motion removes all animation and leaves the check mark drawn.
+Easing is one curve, `cubic-bezier(0.16, 1, 0.3, 1)`. Every visit opens on a paper intro where the brand's supplied logo motion plays (pure CSS keyframes, ~3.2s to land, then a 0.4s hold). Once it settles, the paper lifts off upward (clip-path, 0.3s, no hold and no skip label) with a ledger-tick edge, uncovering the card. While the intro is up, the card's entrance waits paused on its first frame. The name is then uncovered from below, the lockup mark replays the fold in miniature, and one sheen passes across Save contact. The rest of the dark screen rises in (14px plus 6px blur, 0.9s, 70ms stagger); the paper screen resolves on scroll via view timelines where supported. Reduced motion removes all animation and leaves the check mark drawn.
 
 ## Do's and Don'ts
 
